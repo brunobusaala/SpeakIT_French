@@ -57,7 +57,7 @@
         <activity
             android:name=".MainActivity7"
             android:exported="false"
-            android:label="Health" />
+            android:label="Physical Description" />
         <activity
             android:name=".MainActivity5"
             android:exported="false"
