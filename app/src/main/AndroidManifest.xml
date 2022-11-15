@@ -21,7 +21,7 @@
         <activity
             android:name=".MainActivity16"
             android:exported="false"
-            android:label="Utensil" />
+            android:label="Days/Month" />
         <activity
             android:name=".MainActivity15"
             android:exported="false"
@@ -33,7 +33,7 @@
         <activity
             android:name=".MainActivity13"
             android:exported="false"
-            android:label="Kitchen" />
+            android:label="Time Expressions" />
         <activity
             android:name=".MainActivity12"
             android:exported="false"
@@ -53,7 +53,7 @@
         <activity
             android:name=".MainActivity8"
             android:exported="false"
-            android:label="Countries" />
+            android:label="Food" />
         <activity
             android:name=".MainActivity7"
             android:exported="false"

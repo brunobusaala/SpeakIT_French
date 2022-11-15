@@ -185,8 +185,8 @@
       android:id="@+id/textView384"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="25dp"
-      android:layout_marginTop="37dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="92dp"
       android:text="@string/textView384"
       android:textColor="?android:textColorPrimary"
       app:layout_constraintStart_toStartOf="parent"
@@ -196,11 +196,12 @@
       android:id="@+id/textView385"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="38dp"
+      android:layout_marginStart="4dp"
+      android:layout_marginTop="37dp"
       android:text="@string/textView385"
       android:textColor="?android:textColorPrimary"
       app:layout_constraintStart_toStartOf="@+id/textView383"
-      app:layout_constraintTop_toBottomOf="@+id/textView383" />
+      app:layout_constraintTop_toBottomOf="@+id/textView513" />
 
   <TextView
       android:id="@+id/textView386"
@@ -312,7 +313,8 @@
       android:id="@+id/button164"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="13dp"
+      android:layout_marginStart="4dp"
+      android:layout_marginTop="80dp"
       app:layout_constraintStart_toStartOf="@+id/button163"
       app:layout_constraintTop_toBottomOf="@+id/button163"
       app:srcCompat="@drawable/ic_baseline_volume_up_24" />
@@ -378,6 +380,18 @@
       android:textColor="?android:textColorPrimary"
       app:layout_constraintStart_toStartOf="@+id/textView389"
       app:layout_constraintTop_toBottomOf="@+id/textView389" />
+
+  <TextView
+      android:id="@+id/textView513"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="37dp"
+      android:text="@string/textView513"
+      android:textStyle="bold"
+      android:textColor="?android:textColorPrimary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView383" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

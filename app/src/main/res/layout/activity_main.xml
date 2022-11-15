@@ -13,12 +13,14 @@
     tools:ignore="HardcodedText">
 
 
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
+            android:layout_height="wrap_content"
+            >
 
 
             <TextView
@@ -39,7 +41,7 @@
                 android:layout_marginTop="68dp"
                 android:background="@drawable/circular_button"
                 android:contentDescription="@string/imageButton2"
-                android:onClick="Countries"
+                android:onClick="Food"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton6"
                 app:layout_constraintStart_toStartOf="@+id/imageButton6"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton6"
@@ -160,7 +162,7 @@
                 android:layout_marginEnd="2dp"
                 android:background="@drawable/circular_button"
                 android:contentDescription="@string/imageButton13"
-                android:onClick="Kitchen"
+                android:onClick="timeExpressions"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton10"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/imageButton10"
@@ -200,7 +202,7 @@
                 android:layout_marginTop="68dp"
                 android:background="@drawable/circular_button"
                 android:contentDescription="@string/imageButton16"
-                android:onClick="Utensils"
+                android:onClick="daysMonth"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton13"
                 app:layout_constraintStart_toStartOf="@+id/imageButton13"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton13"
@@ -465,6 +467,7 @@
                 app:layout_constraintStart_toStartOf="@+id/imageButton44"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton44" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
     <!--this the navigation view which draws
         and shows the navigation drawer-->

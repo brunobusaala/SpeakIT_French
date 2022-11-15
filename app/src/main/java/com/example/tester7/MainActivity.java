@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void Countries(View view) {
+    public void Food(View view) {
         Intent intent = new Intent(this, MainActivity8.class);
         startActivity(intent);
     }
@@ -169,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void Kitchen(View view) {
+    public void timeExpressions(View view) {
         Intent intent = new Intent(this, MainActivity13.class);
         startActivity(intent);
     }
@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void Utensils(View view) {
+    public void daysMonth(View view) {
         Intent intent = new Intent(this, MainActivity16.class);
         startActivity(intent);
     }
