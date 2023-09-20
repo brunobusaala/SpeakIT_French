@@ -206,7 +206,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/imageButton13"
                 app:layout_constraintStart_toStartOf="@+id/imageButton13"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton13"
-                app:srcCompat="@drawable/ic_utensils" />
+                app:srcCompat="@drawable/monthicon" />
 
             <ImageButton
                 android:id="@+id/imageButton8"
@@ -218,7 +218,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton5"
                 app:layout_constraintStart_toStartOf="@+id/imageButton5"
-                app:srcCompat="@drawable/ic_stationary" />
+                app:srcCompat="@drawable/ic_physical_description" />
 
             <ImageButton
                 android:id="@+id/imageButton"
@@ -401,19 +401,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="68dp"
                 android:background="@drawable/circular_button"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton37"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton14"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/imageButton14"
                 app:layout_constraintTop_toTopOf="@+id/textView13"
-                app:srcCompat="@drawable/ic_physical_description" />
+                app:srcCompat="@drawable/ic_stationary" />
 
             <TextView
-                android:id="@+id/textView443"
+                android:id="@+id/stationary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="23dp"
-                android:text="TextView"
+                android:layout_marginTop="8dp"
+                android:text="@string/stationary"
+                android:textColor="?colorPrimaryDark"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton21"
+                app:layout_constraintHorizontal_bias="0.7"
                 app:layout_constraintStart_toStartOf="@+id/imageButton21"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton21" />
 
@@ -422,10 +425,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="68dp"
+                android:background="@drawable/circular_button"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton44"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton15"
                 app:layout_constraintStart_toStartOf="@+id/imageButton15"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton15"
-                app:srcCompat="@drawable/ic_icons8_instagram" />
+                app:srcCompat="@drawable/ic_utensils" />
 
             <ImageButton
                 android:id="@+id/imageButton44"
@@ -434,18 +439,20 @@
                 android:layout_marginTop="68dp"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton16"
                 app:layout_constraintHorizontal_bias="0.0"
+                android:background="@drawable/circular_button"
                 app:layout_constraintStart_toStartOf="@+id/imageButton16"
                 app:layout_constraintTop_toTopOf="@+id/textView15"
-                app:srcCompat="@drawable/ic_icons8_instagram" />
+                app:srcCompat="@drawable/weathericon" />
 
             <ImageButton
-                android:id="@+id/imageButton51"
+                android:id="@+id/shopping"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="@+id/imageButton21"
-                app:layout_constraintStart_toStartOf="@+id/imageButton21"
-                app:layout_constraintTop_toTopOf="@+id/textView443"
-                app:srcCompat="@drawable/ic_icons8_instagram" />
+                android:background="@drawable/circular_button"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton37"
+                app:layout_constraintStart_toStartOf="@+id/imageButton37"
+                app:layout_constraintTop_toBottomOf="@+id/textView503"
+                app:srcCompat="@drawable/shopping" />
 
             <TextView
                 android:id="@+id/textView503"
@@ -453,16 +460,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Kitchen"
+                android:textColor="?android:textColorPrimary"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton37"
                 app:layout_constraintStart_toStartOf="@+id/imageButton37"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton37" />
 
             <TextView
-                android:id="@+id/textView504"
+                android:id="@+id/weather"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Time"
+                android:text="@string/weather"
+                android:textColor="?colorPrimaryDark"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton44"
                 app:layout_constraintStart_toStartOf="@+id/imageButton44"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton44" />

@@ -668,5 +668,7 @@
     <string name="textView478">gold-fish</string>
     <string name="textView479">le poisson-rouge</string>
     <string name="textView513">Months of the year</string>
+    <string name="stationary">Stationary</string>
+    <string name="weather">Weather</string>
 
 </resources>
