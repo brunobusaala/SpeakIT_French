@@ -4,194 +4,198 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
-import android.media.Image;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.util.Locale;
 
 
-public class MainActivity11 extends AppCompatActivity {
+public class FruitActivity extends AppCompatActivity {
 
-    ImageButton button102;
-    ImageButton button103;
-    ImageButton button104;
-    ImageButton button105;
-    ImageButton button106;
-    ImageButton button107;
-    ImageButton button108;
-    ImageButton button109;
-    ImageButton button110;
-    ImageButton button111;
-    ImageButton button112;
-    TextView textView246;
-    TextView textView248;
-    TextView textView250;
-    TextView textView252;
-    TextView textView254;
-    TextView textView256;
-    TextView textView258;
-    TextView textView260;
-    TextView textView262;
-    TextView textView264;
-    TextView textView267;
+    ImageButton button13;
+    ImageButton button14;
+    ImageButton button15;
+    ImageButton button16;
+    ImageButton button17;
+    ImageButton button18;
+    ImageButton button19;
+    ImageButton button20;
+    ImageButton button21;
+    ImageButton button22;
+    ImageButton button23;
+    TextView textView33;
+    TextView textView35;
+    TextView textView50;
+    TextView textView52;
+    TextView textView54;
+    TextView textView56;
+    TextView textView58;
+    TextView textView60;
+    TextView textView62;
+    TextView textView64;
+    TextView textView67;
     TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main11);
+        setContentView(R.layout.fruit_activity);
 
-        textView246 = findViewById(R.id.textView246);
-        textView248 = findViewById(R.id.textView248);
-        textView250 = findViewById(R.id.textView250);
-        textView252 = findViewById(R.id.textView252);
-        textView254 = findViewById(R.id.textView254);
-        textView256 = findViewById(R.id.textView256);
-        textView258 = findViewById(R.id.textView258);
-        textView260 = findViewById(R.id.textView260);
-        textView262 = findViewById(R.id.textView262);
-        textView264 = findViewById(R.id.textView264);
-        textView267 = findViewById(R.id.textView267);
-        button102 = findViewById(R.id.button102);
-        button103 = findViewById(R.id.button103);
-        button104 = findViewById(R.id.button104);
-        button105 = findViewById(R.id.button105);
-        button106 = findViewById(R.id.button106);
-        button107 = findViewById(R.id.button107);
-        button108 = findViewById(R.id.button108);
-        button109 = findViewById(R.id.button109);
-        button110 = findViewById(R.id.button110);
-        button111 = findViewById(R.id.button111);
-        button112= findViewById(R.id.button112);
 
+        textView33 = findViewById(R.id.textView33);
+        textView35 = findViewById(R.id.textView35);
+        textView50 = findViewById(R.id.textView50);
+        textView52 = findViewById(R.id.textView52);
+        textView54 = findViewById(R.id.textView54);
+        textView56 = findViewById(R.id.textView56);
+        textView58 = findViewById(R.id.textView58);
+        textView60 = findViewById(R.id.textView60);
+        textView62 = findViewById(R.id.textView62);
+        textView64 = findViewById(R.id.textView64);
+        textView67 = findViewById(R.id.textView67);
+        button13 = findViewById(R.id.button13);
+        button14 = findViewById(R.id.button14);
+        button15 = findViewById(R.id.button15);
+        button16 = findViewById(R.id.button16);
+        button17 = findViewById(R.id.button17);
+        button18 = findViewById(R.id.button18);
+        button19 = findViewById(R.id.button19);
+        button20 = findViewById(R.id.button20);
+        button21 = findViewById(R.id.button21);
+        button22 = findViewById(R.id.button22);
+        button23 = findViewById(R.id.button23);
 
 
 
         // create an object textToSpeech and adding features into it
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+
             @Override
             public void onInit(int i) {
 
                 // if No error is found then only it will run
                 if(i!=TextToSpeech.ERROR){
                     // To Choose language of speech
-                    textToSpeech.setLanguage(Locale.FRANCE);
+                    textToSpeech.setLanguage(Locale.FRENCH);
+                    textToSpeech.setSpeechRate(0.2f);
                 }
             }
         });
 
         // Adding OnClickListener
-        button102.setOnClickListener(new View.OnClickListener() {
+        button13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String toSpeak = textView246.getText().toString();
-                Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
-                textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
-            }
-        });
-        // Adding OnClickListener
-        button103.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String toSpeak = textView248.getText().toString();
-                Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
-                textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
-            }
-        });
-        // Adding OnClickListener
-        button104.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String toSpeak = textView250.getText().toString();
-                Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
-                textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
-            }
-        });
-        // Adding OnClickListener
-        button105.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String toSpeak = textView252.getText().toString();
-                Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
-                textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
-            }
-        });
-        // Adding OnClickListener
-        button106.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String toSpeak = textView254.getText().toString();
+                String toSpeak = textView33.getText().toString();
                 Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
                 textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
 
             }
         });
         // Adding OnClickListener
-        button107.setOnClickListener(new View.OnClickListener() {
+        button14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String toSpeak = textView256.getText().toString();
+                String toSpeak = textView35.getText().toString();
                 Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
                 textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
         // Adding OnClickListener
-        button108.setOnClickListener(new View.OnClickListener() {
+        button15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String toSpeak = textView258.getText().toString();
+                String toSpeak = textView50.getText().toString();
                 Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
                 textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
         // Adding OnClickListener
-        button109.setOnClickListener(new View.OnClickListener() {
+        button16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String toSpeak = textView260.getText().toString();
+                String toSpeak = textView52.getText().toString();
                 Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
                 textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
         // Adding OnClickListener
-        button110.setOnClickListener(new View.OnClickListener() {
+        button17.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String toSpeak = textView262.getText().toString();
+                String toSpeak = textView54.getText().toString();
+                Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
+                textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+
+            }
+        });
+        // Adding OnClickListener
+        button18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String toSpeak = textView56.getText().toString();
                 Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
                 textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
         // Adding OnClickListener
-        button111.setOnClickListener(new View.OnClickListener() {
+        button19.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String toSpeak = textView264.getText().toString();
+                String toSpeak = textView58.getText().toString();
                 Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
                 textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
         // Adding OnClickListener
-        button112.setOnClickListener(new View.OnClickListener() {
+        button20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String toSpeak = textView267.getText().toString();
+                String toSpeak = textView60.getText().toString();
                 Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
                 textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
+        // Adding OnClickListener
+        button21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String toSpeak = textView62.getText().toString();
+                Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
+                textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+        // Adding OnClickListener
+        button22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String toSpeak = textView64.getText().toString();
+                Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
+                textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+        // Adding OnClickListener
+        button23.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String toSpeak = textView67.getText().toString();
+                Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
+                textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+
         // calling the action bar
         ActionBar actionBar = getSupportActionBar();
 
         // showing the back button in action bar
         actionBar.setDisplayHomeAsUpEnabled(true);
+
+
     }
 
     // this event will enable the back
