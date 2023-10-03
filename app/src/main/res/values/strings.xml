@@ -670,5 +670,13 @@
     <string name="textView513">Months of the year</string>
     <string name="stationary">Stationary</string>
     <string name="weather">Weather</string>
-
+    <string name="developer">Developer</string>
+    <string name="communication">Communication</string>
+    <string name="others">Others</string>
+    <string name="common_phrases">Common Phrases</string>
+    <string name="contacts">Contacts</string>
+    <string name="about">About</string>
+    <string name="feedback">Feedback</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate</string>
 </resources>

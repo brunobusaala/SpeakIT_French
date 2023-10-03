@@ -18,63 +18,63 @@
             android:name=".MainActivity17"
             android:exported="false" />
         <activity
-            android:name=".MainActivity16"
+            android:name=".DaysMonthActivity"
             android:exported="false"
             android:label="Days/Month" />
         <activity
-            android:name=".MainActivity15"
+            android:name=".RestaurantActivity"
             android:exported="false"
-            android:label="Bed Room" />
+            android:label="Restaurant" />
         <activity
-            android:name=".MainActivity14"
+            android:name=".FestivalActivity"
             android:exported="false"
             android:label="Sitting Room" />
         <activity
-            android:name=".MainActivity13"
+            android:name=".Time_Expression_Activity"
             android:exported="false"
             android:label="Time Expressions" />
         <activity
-            android:name=".MainActivity12"
+            android:name=".WildAnimalsActivity"
             android:exported="false"
             android:label="Wild Animals" />
         <activity
-            android:name=".MainActivity11"
+            android:name=".DomesticAnimalActivity"
             android:exported="false"
             android:label="Domestic Animals" />
         <activity
-            android:name=".MainActivity10"
+            android:name=".DirectionActivity"
             android:exported="false"
             android:label="Directions" />
         <activity
-            android:name=".MainActivity9"
+            android:name=".NumberActivity"
             android:exported="false"
             android:label="Numbers" />
         <activity
-            android:name=".MainActivity8"
+            android:name=".FoodActivity"
             android:exported="false"
             android:label="Food" />
         <activity
-            android:name=".MainActivity7"
+            android:name=".PhysicalDescriptionActivity"
             android:exported="false"
             android:label="Physical Description" />
         <activity
-            android:name=".MainActivity5"
+            android:name=".FamilyActivity"
             android:exported="false"
             android:label="Family" />
         <activity
-            android:name=".MainActivity6"
+            android:name=".SportsActivity"
             android:exported="false"
-            android:label="Stationary" />
+            android:label="Sports" />
         <activity
-            android:name=".MainActivity4"
+            android:name=".ColorActivity"
             android:exported="false"
             android:label="Colors" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".FruitActivity"
             android:exported="false"
             android:label="Fruits" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".GreetingActivity"
             android:exported="false"
             android:label="Greetings" />
         <activity

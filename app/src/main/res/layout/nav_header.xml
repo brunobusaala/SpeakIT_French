@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="80dp"
     android:layout_height="80dp"
-    android:layout_gravity="start|left"
-    android:background="@mipmap/ic_frenchicon3"
-    android:padding="20dp" />
+    android:layout_gravity="start"
+    android:background="@mipmap/ic_frenchicon"
+    android:layout_margin="@dimen/cardview_default_radius"/>
+
 
 
 

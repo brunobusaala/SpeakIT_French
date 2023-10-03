@@ -8,17 +8,17 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.SearchView;
 
 import java.util.List;
-import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         public MyAdapter(Context context, int resource, int textViewResourceId, List objects) {
             super(context, resource, textViewResourceId, objects);
         }
+
         @Override
         public int getCount() {
             return super.getCount();
@@ -79,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        
+
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
             final String query = intent.getStringExtra(SearchManager.QUERY);
             doMySearch(query);
@@ -90,9 +91,9 @@ public class MainActivity extends AppCompatActivity {
     private void doMySearch(String query) {
     }
 
-
     public DrawerLayout drawerLayout;
     public ActionBarDrawerToggle actionBarDrawerToggle;
+    ImageButton time_expression_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,83 +110,95 @@ public class MainActivity extends AppCompatActivity {
         // to toggle the button
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
+        time_expression_btn = findViewById(R.id.imageButton13);
 
         // to make the Navigation drawer icon always appear on the action bar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        time_expression_btn.setOnClickListener
+                (new View.OnClickListener() {
+                     @Override
+                     public void onClick(View v) {
+                         Intent intent = new Intent(MainActivity.this, Time_Expression_Activity.class);
+                         startActivity(intent);
+                     }
+                 }
+                );
+        ;
     }
 
     public void expBtn(View view) {
-        Intent intent = new Intent(this, MainActivity3.class);
+        Intent intent = new Intent(this, GreetingActivity.class);
         startActivity(intent);
     }
 
     public void Fruits(View view) {
-        Intent intent = new Intent(this, MainActivity2.class);
+        Intent intent = new Intent(this, FruitActivity.class);
         startActivity(intent);
     }
 
     public void Colors(View view) {
-        Intent intent = new Intent(this, MainActivity4.class);
+        Intent intent = new Intent(this, ColorActivity.class);
         startActivity(intent);
     }
 
     public void Family(View view) {
-        Intent intent = new Intent(this, MainActivity5.class);
+        Intent intent = new Intent(this, FamilyActivity.class);
         startActivity(intent);
     }
 
     public void Stationary(View view) {
-        Intent intent = new Intent(this, MainActivity6.class);
+        Intent intent = new Intent(this, SportsActivity.class);
         startActivity(intent);
     }
 
     public void Health(View view) {
-        Intent intent = new Intent(this, MainActivity7.class);
+        Intent intent = new Intent(this, PhysicalDescriptionActivity.class);
         startActivity(intent);
     }
 
     public void Food(View view) {
-        Intent intent = new Intent(this, MainActivity8.class);
+        Intent intent = new Intent(this, FoodActivity.class);
         startActivity(intent);
     }
 
     public void Numbers(View view) {
-        Intent intent = new Intent(this, MainActivity9.class);
+        Intent intent = new Intent(this, NumberActivity.class);
         startActivity(intent);
     }
 
     public void Directions(View view) {
-        Intent intent = new Intent(this, MainActivity10.class);
+        Intent intent = new Intent(this, DirectionActivity.class);
         startActivity(intent);
     }
 
     public void domesticAnimals(View view) {
-        Intent intent = new Intent(this, MainActivity11.class);
+        Intent intent = new Intent(this, DomesticAnimalActivity.class);
         startActivity(intent);
     }
 
     public void wildAnimals(View view) {
-        Intent intent = new Intent(this, MainActivity12.class);
+        Intent intent = new Intent(this, WildAnimalsActivity.class);
         startActivity(intent);
     }
 
-    public void timeExpressions(View view) {
-        Intent intent = new Intent(this, MainActivity13.class);
-        startActivity(intent);
-    }
+//    public void timeExpressions(View view) {
+//        Intent intent = new Intent(this, Time_Expression_Activity.class);
+//        startActivity(intent);
+//    }
 
     public void sittingRoom(View view) {
-        Intent intent = new Intent(this, MainActivity14.class);
+        Intent intent = new Intent(this, FestivalActivity.class);
         startActivity(intent);
     }
 
     public void Restaurant(View view) {
-        Intent intent = new Intent(this, MainActivity15.class);
+        Intent intent = new Intent(this, RestaurantActivity.class);
         startActivity(intent);
     }
 
     public void daysMonth(View view) {
-        Intent intent = new Intent(this, MainActivity16.class);
+        Intent intent = new Intent(this, DaysMonthActivity.class);
         startActivity(intent);
     }
 
