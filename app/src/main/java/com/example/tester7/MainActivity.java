@@ -8,12 +8,14 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.SearchView;
 
 import java.util.List;
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         public MyAdapter(Context context, int resource, int textViewResourceId, List objects) {
             super(context, resource, textViewResourceId, objects);
         }
+
         @Override
         public int getCount() {
             return super.getCount();
@@ -77,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        
+
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
             final String query = intent.getStringExtra(SearchManager.QUERY);
             doMySearch(query);
@@ -87,8 +90,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void doMySearch(String query) {
     }
+
     public DrawerLayout drawerLayout;
     public ActionBarDrawerToggle actionBarDrawerToggle;
+    ImageButton time_expression_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,9 +110,21 @@ public class MainActivity extends AppCompatActivity {
         // to toggle the button
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
+        time_expression_btn = findViewById(R.id.imageButton13);
 
         // to make the Navigation drawer icon always appear on the action bar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        time_expression_btn.setOnClickListener
+                (new View.OnClickListener() {
+                     @Override
+                     public void onClick(View v) {
+                         Intent intent = new Intent(MainActivity.this, Time_Expression_Activity.class);
+                         startActivity(intent);
+                     }
+                 }
+                );
+        ;
     }
 
     public void expBtn(View view) {
@@ -165,10 +182,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void timeExpressions(View view) {
-        Intent intent = new Intent(this, Time_Expression_Activity.class);
-        startActivity(intent);
-    }
+//    public void timeExpressions(View view) {
+//        Intent intent = new Intent(this, Time_Expression_Activity.class);
+//        startActivity(intent);
+//    }
 
     public void sittingRoom(View view) {
         Intent intent = new Intent(this, FestivalActivity.class);

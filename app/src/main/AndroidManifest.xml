@@ -24,7 +24,7 @@
         <activity
             android:name=".RestaurantActivity"
             android:exported="false"
-            android:label="Bed Room" />
+            android:label="Restaurant" />
         <activity
             android:name=".FestivalActivity"
             android:exported="false"
@@ -64,7 +64,7 @@
         <activity
             android:name=".SportsActivity"
             android:exported="false"
-            android:label="Stationary" />
+            android:label="Sports" />
         <activity
             android:name=".ColorActivity"
             android:exported="false"
