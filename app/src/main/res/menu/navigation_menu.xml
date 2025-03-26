@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:ignore="HardcodedText">
 
-    />
     <item
-        android:id="@+id/nav_account"
+        android:id="@+id/common_phrases"
         android:icon="@drawable/ic_commonphrases"
-        android:title="Common Phrases" />
+        android:title="@string/common_phrases" />
 
     <item
-        android:id="@+id/nav_settings"
+        android:id="@+id/contacts"
         android:icon="@drawable/ic_contacts"
-        android:title="Contact" />
+        android:title="@string/contacts" />
 
     <item
-        android:id="@+id/nav_logout"
+        android:id="@+id/about"
         android:icon="@drawable/ic_other"
-        android:title="About" />
+        android:title="@string/about" />
 
-    <item android:title="others">
+    <item android:title="@string/others">
         <menu>
             <item
-                android:id="@+id/nav_3"
-                android:icon="@drawable/ic_communication"
-                android:title="communication"></item>
+                android:id="@+id/feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="@string/feedback" />
+
             <item
-                android:id="@+id/nav_4"
-                android:icon="@drawable/ic_developer"
-                android:title="developer">
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/share" />
 
-            </item>
-
+            <item
+                android:id="@+id/rate"
+                android:icon="@drawable/ic_rate"
+                android:title="@string/rate" />
 
         </menu>
     </item>
